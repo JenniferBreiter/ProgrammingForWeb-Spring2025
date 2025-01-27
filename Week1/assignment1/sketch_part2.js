@@ -2,6 +2,7 @@ let grid = undefined;
 let stroke1 = prompt("enter a basic color", "white");
 let stroke2 = prompt("enter another basic color", "black");
 let stroke3 = prompt("pick your favorite color", "brown");
+let stroke4 = prompt("pick a color for the nose", "orange");
 
 function setup() {
   createCanvas(1000, 800);
@@ -74,7 +75,7 @@ function draw() {
   point(500, 420);
   point(500, 460);
   // nose
-  stroke("orange");
+  stroke(stroke4);
   strokeWeight(15);
   triangle(500, 260, 502, 265, 498, 265);
   // tree
