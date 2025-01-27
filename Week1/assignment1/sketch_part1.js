@@ -1,5 +1,5 @@
 let grid = undefined;
-let stroke1 = prompt("enter a basic color", "green");
+let stroke1 = prompt("enter a basic color", "teal");
 let stroke2 = prompt("enter another basic color", "purple");
 
 function setup() {
