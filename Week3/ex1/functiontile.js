@@ -2,10 +2,10 @@ function setup() {
     createCanvas(200, 200);
     noLoop();
 }
-function createTile(){
+function createTile() {
     translate(0, 0);
     //background
-    fill('#09122C');
+    fill('#84B082');
     rect(0, 0, 200, 200);
     //lines
     noFill();
@@ -23,7 +23,7 @@ function createTile(){
     strokeWeight(5);
     circle(100, 100, 105);
     circle(100, 100, 150);
-    circle(100, 100, 195);
+    circle(100, 100, 200);
     //petals
     fill('#BE3144');
     circle(100, 50, 50);
@@ -48,6 +48,6 @@ function createTile(){
 
 }
 
-function draw(){
+function draw() {
     createTile();
 }
