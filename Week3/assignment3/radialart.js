@@ -1,4 +1,4 @@
-let rotateBy = 5;
+let rotateBy = 10;
 function setup() {
     createCanvas(600, 600);
     background(0);
@@ -14,10 +14,10 @@ function makeEllipse(rotateBy) {
 }
 
 function makeTriangle(rotateBy) {
-    let alt = Math.round(rotateBy / 90);
+    let alt = Math.round(rotateBy / 360);
     stroke('blue');
     strokeWeight(5);
-    triangle(150, 300, 150, 200, 350, 250);
+    triangle(150, 300, 150, 200, 350 , 250);
 }
 
 function makeCenter(rotateBy) {
@@ -25,9 +25,17 @@ function makeCenter(rotateBy) {
     noFill();
     stroke(255);
     strokeWeight(3);
-    ellipse(100, 100, 100);
+    ellipse(100 + alt, 100 + alt, 100 + alt);
 
 }
+
+function makeLine(rotateBy) {
+    let alt = Math.round(rotateBy / 360);
+    stroke('purple');
+    strokeWeight(5);
+    line(10, 10, 300 + alt, 300 - alt);
+}
+
 
 function draw() {
     translate(300, 300);
@@ -35,8 +43,8 @@ function draw() {
     makeEllipse(rotateBy);
     makeTriangle(rotateBy);
     makeCenter(rotateBy);
-    rotateBy += 5;
-
+    makeLine(rotateBy);
+    rotateBy += 10;
 }
 
 function mousePressed() { 
