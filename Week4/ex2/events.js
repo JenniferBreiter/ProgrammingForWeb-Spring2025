@@ -5,23 +5,23 @@ const rectWidth = 75;
 let clickCount = 0;
 let speed;
 
-function setup() {
-    createcanvas(500, 500);
+function setup () {
+    createCanvas(500, 500);
     rectY = random(height - rectHeight);
     speed = random(1, 3);
 }
 
-function draw() {
-    background(155);
+function draw () {
+    background('#ee82ee');
     drawShape();
     rectX += speed; 
     if (rectX > width) {
         noLoop();
-        text('Your score was ' + clickCount, 100, 300);
+        text('Your score was ' + clickCount + '\nYAY!', 100, 300);
     }
 }
 
-function mousePressed() {
+function mousePressed () {
     if ((mouseX >= rectX && mouseX <= rectX + rectWidth) && (mouseY >= rectY && mouseY <= rectY + rectHeight)) {
         clickCount++;
         console.log('hit', clickCount);
@@ -29,8 +29,8 @@ function mousePressed() {
    
 }
 
-function drawShape() {
-    fill('purple');
+function drawShape () {
+    fill('cyan');
     rect(rectX, rectY, rectWidth, rectHeight);
 
 }
