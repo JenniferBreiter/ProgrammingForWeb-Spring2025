@@ -8,8 +8,10 @@ let startingId = 0;
 function setup (){
     createCanvas(1500, 1500);
     background('lightblue');
-
-    // rectangle cards
+}
+function draw (){
+    noLoop();
+    // cards
     for (let k = 0; k < 3; k++) {
         for (let i = 0; i < 5; i++){
             rect(startingX, startingY, cardWidth, cardHeight);
@@ -26,9 +28,10 @@ function setup (){
 
 function mousePressed (){
     for (let j = 0; j < cards.length; j++) {
-       let distance = dist(mouseX, mouseY, cards[j].x, cards[j].y);
-       if (distance < cardWidth / 2, distance < cardHeight / 2) {
-            console.log('Card has been clicked', cards[j].id);
+       let cardX = cards[j].x;
+       let cardY = cards[j].y;
+       if (mouseX > cardX && mouseX < cardX + cardWidth && mouseY > cardY && mouseY < cardY + cardWidth) {
+            console.log('Card', cards[j].id + ' has been clicked');
         }
     }
 }
