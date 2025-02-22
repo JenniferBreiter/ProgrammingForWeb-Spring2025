@@ -14,13 +14,12 @@ function draw() {
       bubble[i].move();
       bubble[i].show();
   }
- 
 }
 
 class Bubble {
   constructor() {
-    this.x = 300;
-    this.y = 200;
+    this.x = 275;
+    this.y = 175;
   }
   move() {
     this.x = this.x + random(-3, 3);
