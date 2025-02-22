@@ -2,30 +2,29 @@ let bubble = [];
 
 function setup() {
   createCanvas(600, 400);
-  for (let i = 0; i < bubble; i++) {
-    bubble = new Bubble();
+  for (let i = 0; i < 30; i++) {
+    bubble.push(new Bubble());
   }
-  
   
 }
 
 function draw() {
   background(0);
   for (let i = 0; i < bubble.length; i++) {
-     bubble[i].move();
-     bubble[i].show();
+      bubble[i].move();
+      bubble[i].show();
   }
  
 }
 
-class Bubble (
+class Bubble {
   constructor() {
-    this.x = 200;
-    this.y = 150;
+    this.x = 300;
+    this.y = 200;
   }
   move() {
-    this.x = this.x + random(-5, 5);
-    this.y = this.y + random(-5, 5);
+    this.x = this.x + random(-3, 3);
+    this.y = this.y + random(-3, 3);
   }
   show() {
     stroke('pink');
@@ -33,4 +32,4 @@ class Bubble (
     noFill();
     ellipse(this.x, this.y, 50, 50);
   }
-)
+}
