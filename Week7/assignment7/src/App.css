@@ -1,0 +1,92 @@
+/* background styling */
+body {
+  background-color: #d0e8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Merriweather", serif; 
+  color: #3d3d3d;
+  margin: 0;
+  padding: 20px;
+}
+
+/* container to keep the heading and table aligned */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+
+/* header */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #5a3e2b;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* table styling */
+table {
+  width: 1000px;
+  max-width: 1500px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* table header */
+th {
+  background-color: #c7a17a; 
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+/* table rows */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* bold book titles */
+td:nth-child(2) {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* alternating row colors */
+tr:nth-child(even) {
+  background-color: #f9f6f2;
+}
+
+/* highlight certain rows differently */
+.highlighted-row {
+  background-color: #eed7b7; 
+  font-weight: bold;
+}
+
+/* book images */
+.book-image {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* hover effect */
+.book-image:hover {
+  transform: scale(1.05);
+}
