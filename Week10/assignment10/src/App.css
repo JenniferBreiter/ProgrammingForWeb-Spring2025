@@ -1,0 +1,345 @@
+/* background styling */
+body {
+  background-color: #d0e8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Merriweather", serif; 
+  color: #3d3d3d;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Add background image with opacity */
+body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./assets/pattern.webp') no-repeat center center/cover;
+  opacity: 0.1;
+  z-index: -1; 
+  pointer-events: none;
+}
+
+/* container to keep the heading, table, and form aligned and centered */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+/* header */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #5a3e2b;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* table styling */
+table {
+  width: 100%; 
+  max-width: 1300px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* table header */
+th {
+  background-color: #c7a17a; 
+  color: white;
+  font-size: 1.2rem;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+/* table rows */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* bold book titles */
+td:nth-child(2) {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* alternating row colors */
+tr:nth-child(even) {
+  background-color: #f9f6f2;
+}
+
+/* highlight certain rows differently */
+.highlighted-row {
+  background-color: #eed7b7; 
+  font-weight: bold;
+}
+
+/* book images */
+.book-image {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Left-align description text */
+.book-description {
+  text-align: left;
+  padding: 10px; 
+  font-size: 1rem;
+  color: #333; 
+}
+
+/* hover effect */
+.book-image:hover {
+  transform: scale(1.05);
+}
+
+/* button style */
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 120px; 
+  height: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* duplicate button */
+.duplicate-btn {
+  background-color: #9ab4cb; 
+  color: white;
+}
+
+.duplicate-btn:hover {
+  background-color: #9dcbf4; 
+  transform: scale(1.05);
+}
+
+/* delete button */
+.delete-btn {
+  background-color: #5a3e2b; 
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c7a17a; 
+  transform: scale(1.05);
+}
+
+/**/
+
+.add-book-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;     
+  width: 100%;                 
+  margin-top: 40px; 
+}
+
+/* form title */
+.form-title {
+  text-align: left;
+  font-size: 1.5rem;    
+  margin-bottom: 15px;
+}
+
+/* Form layout */
+.add-book-form {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%; 
+  max-width: 700px;  
+  margin: 0 auto; 
+}
+
+/* Form fields (title, author, year, image) layout */
+.form-row {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  gap: 10px;
+}
+
+/* Add padding between label and input field */
+.form-group {
+  margin-bottom: 15px; 
+}
+
+.form-group label {
+  margin-bottom: 5px;  
+  font-weight: bold;  
+}
+
+.form-group input,
+.form-group textarea {
+  padding-top: 5px;    
+  padding-bottom: 5px; 
+  width: 100%;         
+  border: 1px solid #ccc;  
+  border-radius: 5px;  
+}
+
+/* Ensure textarea is consistent with the input fields */
+textarea {
+  width: 100%; 
+  height: 100px;
+  resize: none;
+  padding-top: 5px;    
+  padding-bottom: 5px; 
+}
+
+/* Style for checkboxes (without additional padding) */
+.form-group input[type="checkbox"] {
+  margin-right: 10px;  
+  width: auto;         
+  height: auto;        
+  padding: 0;          
+}
+
+/*  checkboxes */
+.genre-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  max-width: 800px;  
+  padding: 20px 0px;
+  border-radius: 8px;
+}
+
+/* text inputs for genres */
+.genre-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px 0px;
+  border-radius: 8px;
+}
+
+/* Individual genre input fields */
+.genre-inputs input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+}
+
+/* Input labels for genres */
+.genre-inputs label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5a3e2b;
+  margin-bottom: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #5a3e2b;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #3d2a1d;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Required label styling */
+.required::before {
+  content: "*";
+  color: red;
+}
+
+/* Detail Page Styling */
+.detail-page {
+  background: white;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.detail-page img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.detail-page h1 {
+  color: #5a3e2b;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.detail-page p {
+  font-size: 1.1rem;
+  color: #3d3d3d;
+  margin: 8px 0;
+}
+
+.detail-page a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #5a3e2b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.detail-page a:hover {
+  color: #c7a17a;
+  text-decoration: underline;
+}
