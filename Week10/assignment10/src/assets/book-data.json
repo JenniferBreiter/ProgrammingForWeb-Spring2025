@@ -5,7 +5,7 @@
       "author": "Jane Austen",
       "genre": "Classic Literature",
       "yearPublished": "1811 - 1817",
-      "image": "/assets/jane-austen-set.webp",
+      "image": "src/assets/jane-austen-set.webp",
       "description": "A collection of Jane Austen's most beloved novels, including Pride and Prejudice and Sense and Sensibility.",
       "synopsis": "This set gathers the romantic and satirical masterpieces of Jane Austen, where sharp social commentary meets timeless tales of love, heartbreak, and independence. With heroines like the witty Elizabeth Bennet and the steadfast Elinor Dashwood, Austen explores the complexities of class, marriage, and morality in 19th-century England. Each novel offers a window into a world ruled by manners and miscommunication, but ultimately driven by hope and human connection."
     },
@@ -15,7 +15,7 @@
       "author": "Charlotte, Emily, and Anne Brontë",
       "genre": "Classic Literature",
       "yearPublished": "1847 - 1853",
-      "image": "/assets/bronte-set.webp",
+      "image": "src/assets/bronte-set.webp",
       "description": "Includes the timeless works of the Brontë sisters, featuring Jane Eyre, Wuthering Heights, and The Tenant of Wildfell Hall.",
       "synopsis": "A brooding, gothic collection of deeply personal and emotionally charged novels that redefined Victorian literature. From Jane Eyre’s journey through hardship and love, to the haunting obsession at the heart of Wuthering Heights, and the bold feminist rebellion in The Tenant of Wildfell Hall—these stories are fierce, poetic, and enduring. Each Brontë sister delivers a uniquely intense narrative full of defiance, passion, and the struggles of women seeking identity in a constrained society."
     },
@@ -25,7 +25,7 @@
       "author": "J.K. Rowling",
       "genre": "Fantasy",
       "yearPublished": "1997 - 2007",
-      "image": "/assets/harry-potter-set.webp",
+      "image": "src/assets/harry-potter-set.webp",
       "description": "Follow Harry Potter and his friends as they battle dark magic, uncover secrets, and grow into heroes.",
       "synopsis": "From the moment Harry discovers he's a wizard, his life becomes a whirlwind of magical education, lifelong friendships, and mortal danger. Across seven books, he unravels the mystery of his past, confronts dark forces at Hogwarts, and ultimately faces the dark wizard Voldemort in a battle between love and power. The series is a coming-of-age tale wrapped in spells, hidden rooms, magical creatures, and the kind of bravery that comes from self-sacrifice and loyalty."
     },
@@ -35,7 +35,7 @@
       "author": "Lemony Snicket",
       "genre": "Children's Fiction",
       "yearPublished": "1999 - 2006",
-      "image": "/assets/unfortunate-events-set.webp",
+      "image": "src/assets/unfortunate-events-set.webp",
       "description": "The tragic yet thrilling tale of the Baudelaire orphans as they evade the sinister Count Olaf.",
       "synopsis": "The Baudelaire children—Violet, Klaus, and Sunny—are clever, inventive, and very unlucky. After the mysterious death of their parents, they’re pursued by the devious Count Olaf who will stop at nothing to steal their inheritance. With each book, the orphans navigate bizarre guardians, mysterious organizations, and cryptic clues that hint at a much bigger conspiracy. Darkly humorous and filled with gothic charm, this series warns readers again and again: it will not have a happy ending."
     },
@@ -45,7 +45,7 @@
       "author": "J.R.R. Tolkien",
       "genre": "Fantasy",
       "yearPublished": "1954 - 1955",
-      "image": "/assets/lotr-book-set.webp",
+      "image": "src/assets/lotr-book-set.webp",
       "description": "An epic high-fantasy adventure where Frodo Baggins and his companions set out to destroy the One Ring.",
       "synopsis": "In the vast and mythic realm of Middle-earth, a humble hobbit is entrusted with a burden that could save or doom the world. Frodo Baggins and the Fellowship must travel through ancient forests, cursed mountains, and battlefields torn by war to destroy the One Ring. Tolkien's legendary saga is a story of friendship, sacrifice, and the enduring hope that even the smallest person can change the course of the future. It’s a cornerstone of fantasy literature and a testament to worldbuilding on an epic scale."
     },
@@ -55,7 +55,7 @@
       "author": "Robert Jordan & Brandon Sanderson",
       "genre": "Fantasy",
       "yearPublished": "1990 - 2013",
-      "image": "/assets/wheel-of-time-set.webp",
+      "image": "src/assets/wheel-of-time-set.webp",
       "description": "A sprawling fantasy series filled with prophecy, powerful magic, and the battle between light and darkness.",
       "synopsis": "Spanning thousands of years and cultures, The Wheel of Time follows Rand al'Thor and a vast ensemble of characters as they navigate prophecy, war, and the turning of the ages. As the Dragon Reborn, Rand must face a destiny entwined with the salvation or destruction of the world. With its deep lore, sweeping landscapes, and powerful themes of rebirth and fate, the series is a towering achievement in fantasy that blends magic, politics, and myth into an unforgettable saga."
     }

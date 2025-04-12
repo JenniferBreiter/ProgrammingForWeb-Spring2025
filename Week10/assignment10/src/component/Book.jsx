@@ -6,9 +6,7 @@ const Book = ({ book, isHighlighted, onDelete, onDuplicate }) => {
   return (
     <tr style={{ backgroundColor: isHighlighted ? "#ffebcd" : "white" }}>
       <td><img src={book.image} alt={book.title} width="100" /></td>
-      <td>
-        <Link to={`${book.id}`}>{book.title}</Link>
-      </td>
+      <td><Link to={`${book.id}`}>{book.title}</Link></td>
       <td>{book.author}</td>
       <td>{book.genre}</td>
       <td>{book.yearPublished}</td>
