@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Final: Mandala</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    
+  </head>
+
+  <body>
+    <main>
+      <!-- Left Controls Panel -->
+      <section id="controls">
+        <h1>Make A Mandala</h1>
+
+        <!-- Tip box -->
+        <p class="tip">
+          💡 Tip: Use your <strong>mouse</strong> (drag left/right) to adjust radius.<br>
+          Use <strong>arrow keys</strong> to change hue (← →) and symmetry (↑ ↓).
+        </p>
+
+        <!-- Start/Stop toggle button -->
+        <button id="toggleButton">Start Drawing</button>
+
+        <!-- Shape settings -->
+        <label>
+          Background Color:
+          <input type="color" id="bgColorPicker" value="#ffffff" />
+        </label>
+
+        <label>Shape Type:
+          <select id="shapeSelector">
+            <option value="all">All</option>
+            <option value="circle">Circle</option>
+            <option value="triangle">Triangle</option>
+            <option value="square">Square</option>
+            <option value="line">Line</option>
+          </select>
+        </label>
+
+        <label>Symmetry:
+          <input type="range" id="symmetrySlider" min="4" max="36" value="12" />
+        </label>
+
+        <label>Radius:
+          <input type="range" id="radiusSlider" min="0" value="150" />
+        </label>
+
+        <label>Shape Size:
+          <input type="range" id="sizeSlider" min="5" max="100" value="30" />
+        </label>
+
+        <label>Rotation (°):
+          <input type="range" id="rotationSlider" min="0" max="360" value="0" />
+        </label>
+
+        <label>Hue:
+          <input type="range" id="hueSlider" min="0" max="360" value="200" />
+        </label>
+
+        <label>Speed (FPS):
+          <input type="range" id="speedSlider" min="1" max="60" value="10" />
+        </label>
+
+        <label>
+          <span>Fill Shapes</span>
+          <input type="checkbox" id="fillToggle" checked style="margin-top:0"/>
+        </label>
+
+        <button onclick="clearCanvas()">Clear Canvas</button>
+        <button onclick="saveCanvas('mandala', 'png')">Download</button>
+      </section>
+
+      <!-- Right Canvas Panel -->
+      <section id="canvas-container"></section>
+    </main>
+
+    <!-- Sketch logic -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
